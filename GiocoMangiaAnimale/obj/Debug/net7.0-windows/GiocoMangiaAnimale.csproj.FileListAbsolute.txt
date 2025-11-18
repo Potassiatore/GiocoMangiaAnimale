@@ -1,0 +1,16 @@
+E:\CSharpOttobre\GiocoMangiaAnimale\bin\Debug\net7.0-windows\GiocoMangiaAnimale.exe
+E:\CSharpOttobre\GiocoMangiaAnimale\bin\Debug\net7.0-windows\GiocoMangiaAnimale.deps.json
+E:\CSharpOttobre\GiocoMangiaAnimale\bin\Debug\net7.0-windows\GiocoMangiaAnimale.runtimeconfig.json
+E:\CSharpOttobre\GiocoMangiaAnimale\bin\Debug\net7.0-windows\GiocoMangiaAnimale.dll
+E:\CSharpOttobre\GiocoMangiaAnimale\bin\Debug\net7.0-windows\GiocoMangiaAnimale.pdb
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.Application.resources
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.csproj.GenerateResource.cache
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.AssemblyInfoInputs.cache
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.AssemblyInfo.cs
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.csproj.CoreCompileInputs.cache
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.dll
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\refint\GiocoMangiaAnimale.dll
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.pdb
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\GiocoMangiaAnimale.genruntimeconfig.cache
+E:\CSharpOttobre\GiocoMangiaAnimale\obj\Debug\net7.0-windows\ref\GiocoMangiaAnimale.dll
