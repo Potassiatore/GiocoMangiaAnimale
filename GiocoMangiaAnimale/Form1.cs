@@ -1,4 +1,4 @@
-﻿// ==================== FORM1.CS (Application.cs) ====================
+﻿
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,12 +7,14 @@ using System.Windows.Forms;
 
 namespace GiocoMangiaAnimale
 {
+    public delegate void MorteLeoniHandler();
     public partial class Application : Form
     {
+        public event MorteLeoniHandler? MorteLeoni;
         private PictureBox[,] celle = new PictureBox[6, 6];
         private List<CPersonaggio> animaliInVita = new List<CPersonaggio>();
         private ToolTip toolTip = new ToolTip();
-        private int turniSenzaMangiare = 0; // fame dei leoni
+        private int turniSenzaMangiare = 0;
 
         public Application()
         {
@@ -131,7 +133,6 @@ namespace GiocoMangiaAnimale
 
             var destinazioni = new Dictionary<Point, List<CPersonaggio>>();
 
-            // Movimento casuale
             foreach (var animale in animaliInVita.Where(a => a.Energy > 0).ToList())
             {
                 int passi = Math.Clamp(animale.Speed / 20, 1, 5);
@@ -145,7 +146,7 @@ namespace GiocoMangiaAnimale
                 animale.Sposta(nr, nc);
             }
 
-            // Risoluzione scontri
+          
             foreach (var gruppo in destinazioni)
             {
                 var animali = gruppo.Value;
@@ -184,7 +185,7 @@ namespace GiocoMangiaAnimale
                     leone.Energy = 0;
                     animaliInVita.Remove(leone);
                     AggiungiMessaggioChat($"LEONE {leone.Name} È MORTO DI FAME dopo {turniSenzaMangiare} turni!");
-                    // pulisce la cella
+                    
                     for (int r = 0; r < 6; r++)
                         for (int c = 0; c < 6; c++)
                             if (celle[r, c].Tag == leone)
@@ -213,7 +214,7 @@ namespace GiocoMangiaAnimale
             // ===== FINE PARTITA =====
             if (leoniVivi == 0 && predeVive > 0)
             {
-                // TUTTI I LEONI MORTI → VINCONO LE PREDE!
+               
                 AggiungiMessaggioChat("🏆 VINCONO LE PREDE! Tutti i leoni sono morti!");
                 return; // FERMA IL GIOCO
             }
@@ -235,7 +236,7 @@ namespace GiocoMangiaAnimale
             }
         }
 
-        // ====================== CHAT (max 5 messaggi) ======================
+        
         private void AggiungiMessaggioChat(string testo)
         {
             var lbl = new Label
@@ -251,27 +252,26 @@ namespace GiocoMangiaAnimale
             };
 
             ChatSistema.Controls.Add(lbl);
-            ChatSistema.Controls.SetChildIndex(lbl, 0); // sempre in cima
+            ChatSistema.Controls.SetChildIndex(lbl, 0);
 
             if (ChatSistema.Controls.Count > 5)
             {
                 var vecchio = ChatSistema.Controls[ChatSistema.Controls.Count - 1];
                 ChatSistema.Controls.Remove(vecchio);
                 vecchio.Dispose();
+                //rimuove l'ultima label in modo da dare l'idea di 
             }
 
             ChatSistema.ScrollControlIntoView(lbl);
         }
 
-        // ====================== PULIZIA CHAT (se vuoi un pulsante) ======================
+       
         public void CancellaRighe()
         {
             ChatSistema.Controls.Clear();
         }
 
         private void Form1_Load(object sender, EventArgs e) => CancellaRighe();
-
-        // ====================== TUTTI I TUOI CLICK VUOTI (li lascio come li avevi) ======================
         private void label1_Click(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) { }

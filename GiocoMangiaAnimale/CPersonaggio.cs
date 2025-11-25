@@ -16,14 +16,11 @@ namespace GiocoMangiaAnimale
         public int Energy { get; set; }
         public int Speed { get; set; }
 
-        // Posizione sulla griglia
         public int Riga { get; set; } = -1;
         public int Colonna { get; set; } = -1;
 
-        // Tipo animale
         public AnimalType TipoAnimale { get; protected set; }
 
-        // COLORE DI SFONDO per questo animale
         public Color ColoreSfondo { get; protected set; }
 
         protected CPersonaggio(string name, int energy, int speed, AnimalType tipo)
@@ -33,12 +30,11 @@ namespace GiocoMangiaAnimale
             Speed = speed;
             TipoAnimale = tipo;
 
-            // Assegna automaticamente il colore in base al tipo
             ColoreSfondo = tipo switch
             {
-                AnimalType.Gazzella => Color.FromArgb(205, 133, 222),   // Marrone chiaro (gazzella)
-                AnimalType.Leone => Color.FromArgb(255, 140, 0),    // Arancione scuro (leone)
-                AnimalType.Lepre => Color.FromArgb(139, 139, 139),  // Grigio (lepre)
+                AnimalType.Gazzella => Color.FromArgb(205, 133, 222),   
+                AnimalType.Leone => Color.FromArgb(255, 140, 0),    
+                AnimalType.Lepre => Color.FromArgb(139, 139, 139),  
                 _ => Color.Purple
             };
         }
@@ -74,6 +70,11 @@ namespace GiocoMangiaAnimale
         }
         public override string Move() => "Il leone avanza minaccioso...";
         public override string Eat() => "Il leone divora la preda!";
+
+        public void LeoneMangiato()
+        {
+            
+        }
     }
 
     public class Lepre : CPersonaggio

@@ -8,23 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\danil\\.nuget\\packages\\": {},
+    "C:\\Users\\10934181\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CSharpOttobre\\GiocoMangiaAnimale\\GiocoMangiaAnimale.csproj",
+      "projectUniqueName": "C:\\Users\\10934181\\Source\\Repos\\GiocoMangiaAnimale\\GiocoMangiaAnimale\\GiocoMangiaAnimale.csproj",
       "projectName": "GiocoMangiaAnimale",
-      "projectPath": "E:\\CSharpOttobre\\GiocoMangiaAnimale\\GiocoMangiaAnimale.csproj",
-      "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "E:\\CSharpOttobre\\GiocoMangiaAnimale\\obj\\",
+      "projectPath": "C:\\Users\\10934181\\Source\\Repos\\GiocoMangiaAnimale\\GiocoMangiaAnimale\\GiocoMangiaAnimale.csproj",
+      "packagesPath": "C:\\Users\\10934181\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\10934181\\Source\\Repos\\GiocoMangiaAnimale\\GiocoMangiaAnimale\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\10934181\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -46,13 +46,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net7.0-windows7.0": {
@@ -76,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
